@@ -1,0 +1,32 @@
+/* 下载资源名称复制助手 - 内容脚本样式 */
+
+.dnc-toast {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-80px);
+  background: #1a73e8;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2147483647;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  max-width: 80vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dnc-toast.dnc-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dnc-toast.dnc-toast-error {
+  background: #d93025;
+}
