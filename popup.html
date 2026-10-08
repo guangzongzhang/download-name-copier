@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下载资源名称复制助手</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <rect width="32" height="32" rx="6" fill="#1a73e8"/>
+        <path d="M16 7v13M16 20l-5-5M16 20l5-5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 24h16" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="title">下载资源名称复制助手</div>
+  </div>
+
+  <div id="status" class="status">正在扫描当前页面...</div>
+
+  <div id="list" class="list"></div>
+
+  <div class="footer">
+    <button id="copyAll" class="btn btn-primary" disabled>复制全部文件名称</button>
+  </div>
+
+  <div class="tips">
+    <p>使用方法：</p>
+    <ul>
+      <li>右键点击下载链接 → <b>复制文件名称</b></li>
+      <li>右键点击下载链接 → <b>复制链接文字</b></li>
+      <li>右键点击页面空白 → <b>复制本页所有下载文件名称</b></li>
+      <li>选中文字后右键 → <b>复制所选文字</b></li>
+    </ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
